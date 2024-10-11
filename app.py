@@ -2,13 +2,14 @@
 
 # Programa principal :
 
-print("Calcular a função em 1 grau")
+print("calcular a função em 1 grau")
 
 def calcular_a_funcao_de_1_grau(a1, b2):
-    return -b2 / a1
+    x = -b2 / a1
+    return x
 
-a1 = float(input("Digite o valor de 'A': "))
-b2 = float(input("Digite o valor de 'B': "))
+a1 = float(input("Digite o valor de 'A': ").replace(",","."))
+b2 = float(input("Digite o valor de 'B': ").replace(",","."))
 
 if a1 != 0:
     x = calcular_a_funcao_de_1_grau(a1, b2)
